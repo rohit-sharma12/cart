@@ -12,7 +12,7 @@ const SingleProduct = ({ prod }) => {
         <Card.Body>
           <Card.Title>{prod.name}</Card.Title>
           <Card.Subtitle>
-            <span>$ {prod.price.split('.')[0]}</span>
+            <span>$ {Math.floor(prod.price)}</span>
             {prod.fastDelivery ? (
               <div>Fast Delivery</div>
             ) : (
